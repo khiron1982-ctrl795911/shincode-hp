@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>shincode｜事業を前に進める、AI実装パートナー</title>
+<meta name="description" content="Webサイト、顧客対応、日常業務、コンテンツ運用。いま必要な仕組みを、AIと人の力で設計・実装します。企画だけで終わらせず、現場で使える状態まで伴走する実装パートナーです。">
+<meta property="og:title" content="shincode｜事業を前に進める、AI実装パートナー">
+<meta property="og:description" content="Webサイト、顧客対応、日常業務、コンテンツ運用。いま必要な仕組みを、AIと人の力で設計・実装し、現場で使える状態まで伴走します。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta name="theme-color" content="#ffffff">
+<!-- 【要設定】独自ドメインが決まったら og:url と canonical を追記してください -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- 本文=BIZ UDPGothic（読みやすさに配慮したUD書体）／見出し=Noto Sans JP（太さの階調が広い） -->
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Noto+Sans+JP:wght@500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">本文へスキップ</a>
+
+<!-- ============ ヘッダー ============ -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo" id="top">
+      <span class="logo__text">shincode</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="メインメニュー">
+      <ul class="nav__list">
+        <li><a href="#issues" class="nav__link">課題</a></li>
+        <li><a href="#services" class="nav__link">できること</a></li>
+        <li><a href="#process" class="nav__link">進め方</a></li>
+        <li><a href="#capabilities" class="nav__link">支援イメージ</a></li>
+        <li><a href="#stance" class="nav__link">AI活用方針</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary nav__cta">課題を整理する</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ ファーストビュー ============ -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <h1 class="hero__title">事業を前に進める、<br>AI実装パートナー。</h1>
+      <p class="hero__lead">
+        Webサイト、顧客対応、日常業務、コンテンツ運用。<br>
+        いま必要な仕組みを、AIと人の力で設計・実装します。<br>
+        企画だけで終わらせず、現場で使える状態まで伴走します。
+      </p>
+      <div class="hero__actions">
+        <a href="#services" class="btn btn--primary btn--lg">できることを見る</a>
+        <a href="#contact" class="btn btn--outline btn--lg">事業の課題を整理する</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ヒーロー直下の帯：3領域を一目で示す -->
+  <div class="band">
+    <div class="container">
+      <ul class="band__list">
+        <li class="band__item">
+          <p class="band__en">Create</p>
+          <p class="band__ja">顧客に届く<br>接点をつくる</p>
+        </li>
+        <li class="band__item">
+          <p class="band__en">Automate</p>
+          <p class="band__ja">繰り返し業務を<br>減らす</p>
+        </li>
+        <li class="band__item">
+          <p class="band__en">Enable</p>
+          <p class="band__ja">チームで<br>使える状態にする</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ 課題提示 ============ -->
+  <section class="section section--paper" id="issues" aria-labelledby="issues-title">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <p class="section__eyebrow">よくあるご相談</p>
+        <h2 class="section__title" id="issues-title">こうした状態が、続いていませんか。</h2>
+      </div>
+
+      <ul class="issues">
+        <li class="issues__item reveal">
+          <h3 class="issues__title">サイトはあるが、問い合わせにも採用にもつながっていない</h3>
+          <p class="issues__text">見た目は整っているのに、知りたいことが載っていない。問い合わせの入口が奥まっていて、見た人が次の行動に移れていない状態です。</p>
+        </li>
+        <li class="issues__item reveal">
+          <h3 class="issues__title">同じ問い合わせ対応と資料づくりに、毎日時間を取られている</h3>
+          <p class="issues__text">聞かれる内容も、作る資料もほぼ同じ。それでも毎回ゼロから対応しているため、本来やるべき仕事の時間が削られています。</p>
+        </li>
+        <li class="issues__item reveal">
+          <h3 class="issues__title">AIを試してはいるが、個人利用で止まっている</h3>
+          <p class="issues__text">便利だとは感じるものの、使い方が人によってばらばら。仕事の手順として定まっておらず、チームの成果になっていません。</p>
+        </li>
+        <li class="issues__item reveal">
+          <h3 class="issues__title">その人しか分からない業務が増えている</h3>
+          <p class="issues__text">手順が頭の中にしかなく、休むと止まる。引き継ぎのたびに一から教え直しになり、担当者の負担が固定化しています。</p>
+        </li>
+        <li class="issues__item reveal">
+          <h3 class="issues__title">試したい施策はあるが、外注費と開発期間が重い</h3>
+          <p class="issues__text">効果が読めない段階で大きな投資はできない。結果として、検討したまま何も動かない期間が続いています。</p>
+        </li>
+      </ul>
+
+      <p class="issues__note">当てはまるものが一つでもあれば、対応できる可能性があります。まずは何が起きているかを一緒に整理するところから始めます。</p>
+    </div>
+  </section>
+
+  <!-- ============ 提供サービス（3領域） ============ -->
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow">できること</p>
+        <h2 class="section__title" id="services-title">つくる、減らす、使えるようにする。</h2>
+        <p class="section__desc">3つの領域を横断して支援します。どれか一つだけでも、組み合わせでも構いません。</p>
+      </div>
+
+      <div class="services">
+
+        <article class="service reveal">
+          <div class="service__head">
+            <p class="service__label"><span class="service__en">Create</span></p>
+            <h3 class="service__title">顧客に届く接点をつくる</h3>
+          </div>
+          <div class="service__body">
+            <p class="service__change"><strong>何が変わるか</strong><br>「見られて終わり」だったページが、問い合わせ・予約・応募という次の行動につながります。伝える順番と入口の位置を設計し直すためです。</p>
+            <ul class="service__list">
+              <li>コーポレートサイト</li>
+              <li>採用サイト</li>
+              <li>サービス紹介ページ（LP）</li>
+              <li>予約・問い合わせ導線の設計</li>
+              <li>簡易Webアプリ</li>
+              <li>コンテンツ設計</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__head">
+            <p class="service__label"><span class="service__en">Automate</span></p>
+            <h3 class="service__title">繰り返し業務を減らす</h3>
+          </div>
+          <div class="service__body">
+            <p class="service__change"><strong>何が変わるか</strong><br>毎回ゼロから書いていた返信・資料・集計に、下書きができた状態から取りかかれます。判断が必要な部分だけに、人の時間を使えるようになります。</p>
+            <ul class="service__list">
+              <li>問い合わせの一次対応</li>
+              <li>情報収集とその要約</li>
+              <li>資料作成の下書き</li>
+              <li>見積・報告書の作成補助</li>
+              <li>データ整理</li>
+              <li>定型連絡・社内ツール</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service reveal">
+          <div class="service__head">
+            <p class="service__label"><span class="service__en">Enable</span></p>
+            <h3 class="service__title">AIをチームで使える状態にする</h3>
+          </div>
+          <div class="service__body">
+            <p class="service__change"><strong>何が変わるか</strong><br>一部の人だけが使える状態から、担当が代わっても同じ品質で回る状態になります。手順とルールを、業務の形に合わせて残すためです。</p>
+            <ul class="service__list">
+              <li>業務の棚卸し</li>
+              <li>AI活用の方針づくり</li>
+              <li>プロンプト・テンプレート整備</li>
+              <li>社内ルールの策定</li>
+              <li>研修・マニュアル</li>
+              <li>運用改善</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- 【追加しやすい構造】料金表を掲載する場合は、この直後に <section id="price"> を追加してください -->
+      <p class="services__note">
+        費用は、課題の内容と必要な実装範囲に応じてご提案します。決まった料金プランは設けていません。<br>
+        不要な機能や、効果の見込めない自動化はお勧めしません。
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 支援の進め方 ============ -->
+  <section class="section section--paper" id="process" aria-labelledby="process-title">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <p class="section__eyebrow">支援の進め方</p>
+        <h2 class="section__title" id="process-title">小さく試してから、確実に定着させる。</h2>
+        <p class="section__desc">いきなり大きく作りません。効果を確かめながら、使える形に育てていきます。</p>
+      </div>
+
+      <ol class="process">
+        <li class="process__item reveal">
+          <p class="process__num"><span class="process__num-label">STEP</span>1</p>
+          <div class="process__body">
+            <h3 class="process__title">課題を整理する</h3>
+            <p class="process__text">事業・業務・顧客接点の現状をお聞きし、どこに手を入れると一番効くかを見極めます。改善テーマを、着手できる単位まで具体化します。</p>
+          </div>
+        </li>
+        <li class="process__item reveal">
+          <p class="process__num"><span class="process__num-label">STEP</span>2</p>
+          <div class="process__body">
+            <h3 class="process__title">小さく試す</h3>
+            <p class="process__text">優先度の高いテーマから、限られた範囲で試します。本当に実現できるか、効果が見込めるかを、投資を大きくする前に確かめます。</p>
+          </div>
+        </li>
+        <li class="process__item reveal">
+          <p class="process__num"><span class="process__num-label">STEP</span>3</p>
+          <div class="process__body">
+            <h3 class="process__title">使える形に実装する</h3>
+            <p class="process__text">検証できたものを、Webサイト・業務フロー・ツール・テンプレートとして実装します。企画書ではなく、明日から動くものをお渡しします。</p>
+          </div>
+        </li>
+        <li class="process__item reveal">
+          <p class="process__num"><span class="process__num-label">STEP</span>4</p>
+          <div class="process__body">
+            <h3 class="process__title">現場に定着させる</h3>
+            <p class="process__text">マニュアル、運用ルール、改善の進め方まで整えます。担当者が代わっても続けられる状態にすることが、支援の終点です。</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 実装できること（支援イメージ） ============ -->
+  <!--
+    【差し替えの手順】
+    実績が出たら、この <article class="case"> を1件ずつ差し替えてください。
+    ・case__label … 「支援イメージ」→「実績」など
+    ・case__title … 案件名
+    ・case__text  … 実施内容
+    ・case__points … 具体的な変化（数値は根拠のあるものだけ記載）
+    セクション見出しも「実装できること」→「実績」に変更してください。
+  -->
+  <section class="section" id="capabilities" aria-labelledby="capabilities-title">
+    <div class="container">
+      <div class="section__head">
+        <p class="section__eyebrow">支援イメージ</p>
+        <h2 class="section__title" id="capabilities-title">実装できること</h2>
+        <p class="section__desc">実際にご依頼いただく形の例です。いずれも、実装して終わりではなく運用まで含めて設計します。</p>
+      </div>
+
+      <div class="cases">
+
+        <article class="case reveal">
+          <p class="case__label">Create</p>
+          <h3 class="case__title">問い合わせから予約・相談につながるWeb導線の設計</h3>
+          <p class="case__text">見る人が知りたい順に情報を並べ替え、迷う手前に入口を置きます。フォームの項目を絞り、途中で離脱する理由を減らします。</p>
+          <ul class="case__points">
+            <li>訪問者の目的別に入口を分ける</li>
+            <li>フォームの入力項目を必要最小限に</li>
+            <li>スマートフォンでの操作を基準に配置</li>
+          </ul>
+        </article>
+
+        <article class="case reveal">
+          <p class="case__label">Enable</p>
+          <h3 class="case__title">社内規程や手順書を探しやすくするナレッジ整理</h3>
+          <p class="case__text">散らばった資料を、実際の探し方に沿って整理します。「どこにあるか分からない」で人に聞く時間をなくします。</p>
+          <ul class="case__points">
+            <li>資料の棚卸しと重複の統合</li>
+            <li>探す言葉から辿れる分類</li>
+            <li>更新する人・時期の明確化</li>
+          </ul>
+        </article>
+
+        <article class="case reveal">
+          <p class="case__label">Automate</p>
+          <h3 class="case__title">毎月の報告資料づくりを効率化するテンプレート・自動化</h3>
+          <p class="case__text">毎月ほぼ同じ形で作っている資料を、下書きが自動で用意される状態にします。人が担うのは、確認と判断の部分だけになります。</p>
+          <ul class="case__points">
+            <li>形式の統一とテンプレート化</li>
+            <li>集計・下書き作成の自動化</li>
+            <li>公開前の確認手順をセットで用意</li>
+          </ul>
+        </article>
+
+        <article class="case reveal">
+          <p class="case__label">Automate / Enable</p>
+          <h3 class="case__title">採用・営業・広報で使う文章や情報整理の仕組み化</h3>
+          <p class="case__text">求人票、提案文、告知文などを、毎回ゼロから書かずに済む形にします。担当者による品質のばらつきも抑えられます。</p>
+          <ul class="case__points">
+            <li>用途別の型と例文の整備</li>
+            <li>そのまま使える確認リスト</li>
+            <li>表記・トーンのルール化</li>
+          </ul>
+        </article>
+
+        <article class="case reveal">
+          <p class="case__label">Create / Enable</p>
+          <h3 class="case__title">少人数チームでも更新・運用できるサイト設計</h3>
+          <p class="case__text">凝った仕組みを避け、担当者が自分で直せる範囲を広げます。外注しないと1文字も変えられない状態をつくりません。</p>
+          <ul class="case__points">
+            <li>更新する箇所を限定した設計</li>
+            <li>手順書つきでのお引き渡し</li>
+            <li>運用を続けられる範囲での機能選定</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AI活用方針 ============ -->
+  <section class="section section--stance" id="stance" aria-labelledby="stance-title">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <p class="section__eyebrow">AI活用方針</p>
+        <h2 class="section__title" id="stance-title">AIに任せる部分と、人が判断する部分を分けて設計します。</h2>
+      </div>
+
+      <div class="stance">
+        <div class="stance__item reveal">
+          <h3 class="stance__title">速度を上げるために使う</h3>
+          <p class="stance__text">AIは、設計・検証・実装のスピードを高めるために活用します。同じ期間でより多くの案を試せるため、方向性の判断が早く、確かになります。</p>
+        </div>
+        <div class="stance__item reveal">
+          <h3 class="stance__title">判断は人が担う</h3>
+          <p class="stance__text">事業の理解、顧客の理解、導線の設計、そして品質の判断は人の仕事です。ここを預けてしまうと、それらしいだけで成果につながらないものが出来上がります。</p>
+        </div>
+        <div class="stance__item reveal">
+          <h3 class="stance__title">情報の扱いは慎重に</h3>
+          <p class="stance__text">個人情報や顧客情報が関わる業務は、どこまでを機械に渡すかを最初に決めます。最終確認を人が行うことを前提に、手順そのものを設計します。</p>
+        </div>
+        <div class="stance__item reveal">
+          <h3 class="stance__title">合わない導入は勧めない</h3>
+          <p class="stance__text">目的に合わないAI導入や、意味のない自動化はお勧めしません。手作業のままが最適な業務もあります。その場合は、そう申し上げます。</p>
+        </div>
+      </div>
+
+      <div class="stance__tool reveal">
+        <h3 class="stance__tool-title">実装環境について</h3>
+        <p class="stance__tool-text">
+          実装には、Anthropic社の開発ツール「Claude Code」をはじめとする複数の環境を使い分けています。
+          設計と検証を素早く繰り返せることが、短い期間で確かな形にたどり着ける理由です。
+          ただし、これは道具の話であり、成果を決めるのは課題の捉え方と設計です。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ よくある質問 ============ -->
+  <section class="section section--paper" id="faq" aria-labelledby="faq-title">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <p class="section__eyebrow">よくある質問</p>
+        <h2 class="section__title" id="faq-title">ご相談前に、よくいただく質問</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__q" type="button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
+              <span class="faq__q-text">費用はどのくらいかかりますか。</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <p>課題の内容と必要な実装範囲によって変わるため、決まった料金プランは設けていません。最初の整理で範囲を絞り込んだうえで、確定金額をお出しします。金額にご納得いただけない場合、そこで終了で構いません。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__q" type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
+              <span class="faq__q-text">どのくらいの期間がかかりますか。</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <p>範囲によって大きく異なります。まず小さく試す段階を挟むため、「全体でいつ終わるか」よりも「最初の効果がいつ出るか」を基準にご提案します。想定より時間がかかる見込みが立った時点で、正直にお伝えします。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__q" type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
+              <span class="faq__q-text">AIが出した内容の正確さが不安です。</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <p>そのままお客様の目に触れる文章や、金額・条件が関わる資料は、人の確認を挟む手順とセットで設計します。確認しなくてよい業務と、必ず確認すべき業務を最初に切り分けることが、この仕事の中心です。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__q" type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4">
+              <span class="faq__q-text">社内にITに詳しい人がいなくても大丈夫ですか。</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <p>問題ありません。打ち合わせは日常の言葉で行い、専門用語は使う場面ごとに言い換えます。お渡しするものにも手順書をつけ、担当者が代わっても続けられる形にします。</p>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__q" type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5">
+              <span class="faq__q-text">何から相談すればよいか、まとまっていません。</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+          </h3>
+          <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <p>そのままで結構です。整理すること自体が最初の工程です。「これが困っている」と一つ挙げていただければ、その周辺から状況を伺います。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ お問い合わせ ============ -->
+  <section class="section section--contact" id="contact" aria-labelledby="contact-title">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <p class="section__eyebrow">お問い合わせ</p>
+        <h2 class="section__title" id="contact-title">まずは、事業の課題を整理するところから。</h2>
+        <p class="section__desc">具体的な依頼内容が固まっていない段階でも構いません。<br>状況をお聞きし、着手できる形まで一緒に分解します。</p>
+      </div>
+
+      <!--
+        ========== フォームの送信先：Netlify Forms ==========
+        Netlify に公開すると、送信内容が Netlify の管理画面に届きます。
+        （Netlify管理画面 → Forms → contact）
+
+        メール通知の設定:
+          Netlify管理画面 → Site configuration → Forms → Form notifications
+          → Add notification → Email notification で受信先を登録してください。
+
+        ※ Netlify以外（さくら・エックスサーバー等）に置く場合、この仕組みは動きません。
+          その場合は script.js の送信処理を、別のフォームサービスに変更してください。
+        ====================================================
+      -->
+      <form class="form" id="contactForm" name="contact" method="POST"
+            data-netlify="true" netlify-honeypot="bot-field" novalidate>
+
+        <!-- Netlifyがフォームを識別するための項目（表示されません） -->
+        <input type="hidden" name="form-name" value="contact">
+
+        <!-- 迷惑送信よけ。人には見えず、機械だけが記入してしまう項目 -->
+        <p class="form__bot" hidden aria-hidden="true">
+          <label>この欄は記入しないでください <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="f-name">お名前 <em class="form__req">必須</em></label>
+            <input id="f-name" type="text" name="name" autocomplete="name" required aria-describedby="e-name">
+            <span class="form__error" id="e-name"></span>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="f-company">会社・屋号</label>
+            <input id="f-company" type="text" name="company" autocomplete="organization" aria-describedby="e-company">
+            <span class="form__error" id="e-company"></span>
+          </div>
+        </div>
+
+        <div class="form__row">
+          <div class="form__field">
+            <label class="form__label" for="f-email">メールアドレス <em class="form__req">必須</em></label>
+            <input id="f-email" type="email" name="email" autocomplete="email" required aria-describedby="e-email">
+            <span class="form__error" id="e-email"></span>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="f-topic">ご相談の方向性 <em class="form__req">必須</em></label>
+            <select id="f-topic" name="topic" required aria-describedby="e-topic">
+              <option value="">選択してください</option>
+              <option value="web">Webサイト・LPを改善したい</option>
+              <option value="automate">業務を効率化・自動化したい</option>
+              <option value="enable">AI活用の進め方を整理したい</option>
+              <option value="tool">社内ツール・仕組みをつくりたい</option>
+              <option value="undecided">まだ整理できていない</option>
+            </select>
+            <span class="form__error" id="e-topic"></span>
+          </div>
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="f-message">いま起きていること <em class="form__req">必須</em></label>
+          <textarea id="f-message" name="message" rows="6" required aria-describedby="e-message hint-message" placeholder="例）3人の事務所です。同じ内容の問い合わせメールに毎日1時間ほど取られています。返信の質は落としたくないのですが、何か手はありますか。"></textarea>
+          <span class="form__hint" id="hint-message">解決策ではなく、困っている状況をそのままお書きください。</span>
+          <span class="form__error" id="e-message"></span>
+        </div>
+
+        <div class="form__field">
+          <label class="form__check">
+            <input type="checkbox" name="agree" id="f-agree" required aria-describedby="e-agree">
+            <span>個人情報の取り扱いに同意します</span>
+          </label>
+          <span class="form__error" id="e-agree"></span>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg btn--block">この内容で送信する</button>
+
+        <p class="form__status" id="formStatus" role="status" aria-live="polite" hidden></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ フッター ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <p class="logo logo--footer">
+        <span class="logo__text">shincode</span>
+      </p>
+      <p class="footer__text">
+        Webサイト、顧客対応、日常業務、コンテンツ運用。<br>
+        いま必要な仕組みを、AIと人の力で設計・実装します。
+      </p>
+    </div>
+    <nav class="footer__nav" aria-label="フッターメニュー">
+      <a href="#issues">課題</a>
+      <a href="#services">できること</a>
+      <a href="#process">進め方</a>
+      <a href="#capabilities">支援イメージ</a>
+      <a href="#stance">AI活用方針</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </div>
+  <div class="container footer__bottom">
+    <!-- 【要設定】屋号・所在地・連絡先・特定商取引法に基づく表記などは、確定後に記載してください -->
+    <small>&copy; <span id="year">2026</span> shincode</small>
+  </div>
+</footer>
+
+<a href="#top" class="totop" id="totop">ページ上部へ戻る</a>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+# Netlify の設定ファイル
+# このサイトはHTML・CSS・JavaScriptだけなので、ビルド（変換作業）は不要です。
+
+[build]
+  # 公開するフォルダ。リポジトリの直下をそのまま公開します。
+  publish = "."
+  # 変換作業がないため、コマンドは空にしています。
+  command = ""
+
+# セキュリティ関連の基本的な設定
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
